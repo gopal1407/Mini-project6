@@ -1,218 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <style>
-        /* General Styles */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
 
-        header {
-            background-color: #333;
-            color: white;
-            padding: 10px 0;
-            text-align: center;
-        }
-
-        nav {
-            text-align: center;
-            margin-top: 10px;
-        }
-
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-        }
-
-        nav ul li {
-            margin: 0 15px;
-        }
-
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            font-size: 1.2rem;
-        }
-
-        /* Section Styling */
-        section {
-            padding: 40px 20px;
-            max-width: 1200px;
-            margin: 0 auto;
-            background-color: white;
-            margin-bottom: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        section h2 {
-            color: #3498db;
-            text-align: center;
-            font-size: 2.5rem;
-            margin-bottom: 20px;
-        }
-
-        section p {
-            font-size: 1.1rem;
-            color: #555;
-            line-height: 1.6;
-            text-align: justify;
-        }
-
-        /* Projects Section */
-        .projects-container {
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-        }
-
-        .project-card {
-            background-color: #ecf0f1;
-            border-radius: 8px;
-            padding: 20px;
-            flex-basis: 30%;
-            margin-bottom: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        .project-card img {
-            width: 100%;
-            height: auto;
-            border-radius: 8px;
-        }
-
-        .project-card h3 {
-            font-size: 1.5rem;
-            color: #2980b9;
-            margin-top: 15px;
-        }
-
-        /* Contact Form Section */
-        .contact-form {
-            display: flex;
-            flex-direction: column;
-            max-width: 600px;
-            margin: auto;
-        }
-
-        .contact-form input,
-        .contact-form textarea {
-            padding: 12px;
-            margin-bottom: 20px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-        }
-
-        .contact-form button {
-            background-color: #2ecc71;
-            color: white;
-            padding: 12px 25px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 1.2rem;
-        }
-
-        .contact-form button:hover {
-            background-color: #27ae60;
-        }
-
-        /* Footer Styling */
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 10px;
-            margin-top: 20px;
-        }
-
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .projects-container {
-                flex-direction: column;
-            }
-
-            nav ul {
-                flex-direction: column;
-                padding: 0;
-            }
-
-            nav ul li {
-                margin-bottom: 10px;
-            }
-        }
-    </style>
+  <!-- Link an external CSS file instead of embedding HTML inside <style> -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <!-- Header Section -->
-    <header>
-        <h1>Welcome to My Portfolio</h1>
-    </header>
+  <!-- Header Section -->
+  <header>
+    <h1>Welcome to My Portfolio</h1>
+  </header>
 
-    <!-- Navigation Section -->
-    <nav>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-
-    <!-- About Section -->
-    <section id="about">
-        <h2>Welcome to Gopal Midha's Portfolio</h2>
-        <p>Hello! I'm a passionate web developer with a love for creating user-friendly and interactive websites. I have experience with HTML, CSS, JavaScript, and various frameworks. My goal is to build responsive, accessible, and visually appealing websites that provide great user experiences.</p>
-        <p>When I'm not coding, I enjoy learning new technologies, solving problems, and keeping up with the latest trends in web development.</p>
+  <!-- Navigation Section -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+    <!-- Main Section (Welcome Message) -->
+  <section id="home">
+    <h2>Welcome!</h2>
+    <p>This is my personal portfolio. Explore my background, skills, and projects. Enjoy your visit!</p>
+  </section>
+    <!-- About Me Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="about-content">
         <img src="/Users/gopalmidha/Desktop/1701973200327.jpeg" alt="Gopal Midha's Profile Picture" id="profile-pic">
+      <div class="about-text">
+        <p>Hello! I'm Gopal Midha, a passionate web developer who loves building responsive, accessible, and visually appealing websites.</p>
+        <p>I have experience with HTML, CSS, JavaScript, and various frameworks. I continuously explore new technologies and enjoy solving complex problems.</p>
+        <p>In my free time, I enjoy reading, coding side projects, and staying updated with the latest industry trends.</p>
+      </div>
+    </div>
+  </section>
+    
+    <!-- Skills/Resume Section -->
+  <section id="skills">
+    <h2>My Skills & Resume</h2>
+    <div class="skills-list">
+      <div class="skill-item">
+        <h3>HTML</h3>
+        <p>Expert in semantic HTML and accessibility practices.</p>
+      </div>
+      <div class="skill-item">
+        <h3>CSS</h3>
+        <p>Skilled with responsive design, Flexbox, Grid layouts, and animations.</p>
+      </div>
+      <div class="skill-item">
+        <h3>JavaScript</h3>
+        <p>Proficient in ES6+ features, DOM manipulation, and popular frameworks.</p>
+      </div>
+    </div>
 
+    <section class="resume-highlights">
+      <h2>Resume Highlights</h2>
+      <ul>
+        <li><strong>Education:</strong> Business management, WCC, 2023</li>
+        <li><strong>Experience:</strong> Manager at Royal palace, from 2016</li>
+        <li><strong>Certifications:</strong> ....</li>
+          </ul>
     </section>
-
+  </section>
     <!-- Projects Section -->
     <section id="projects">
         <h2>My Projects</h2>
         <div class="projects-container">
             <div class="project-card">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Project 1">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.jpg" alt="Project 1">
                 <h3>Project 1: Python Object-Oriented Programming (OOP)</h3>
                 <p>This project involved building a system using Python and Object-Oriented Programming principles to design a modular, scalable solution.</p>
-                  
             </div>
             <div class="project-card">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/5/58/Shopping_cart_icon.svg" alt="Project 2">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/58/Shopping_cart_icon.jpg" alt="Project 2">
                 <h3>Project 2: E-Commerce Website</h3>
                 <p>A fully functional e-commerce website with a shopping cart, product management, and order processing system.</p>
             </div>
             <div class="project-card">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/6/64/Database_icon_%28black%29.svg" alt="Project 3">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/64/Database_icon_%28black%29.jpg" alt="Project 3">
                 <h3>Project 3: Relational Database Project</h3>
                 <p>Designed and implemented a relational database using MySQL, applying normalization and creating optimized queries for real-world applications.</p>
             </div>
         </div>
     </section>
-
+    
     <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact Me</h2>
+  <section id="contact">
+    <h2>Contact Me</h2>
         <p>Feel free to reach out to me through the following platforms:</p>
         <ul>
             <li>Email: <a href="mailto:gopal140791@yahoo.com">gopal140791@yahoo.com</a></li>
             <li>LinkedIn: <a href="https://www.linkedin.com/in/gopal-midha" target="_blank">Gopal Midha</a></li>
             <li>GitHub: <a href="https://github.com/gopal1407" target="_blank">gopal1407</a></li>
         </ul>
-    </section>
 
+  </section>
+    
     <footer>
         <p>&copy; 2025 Gopal Midha</p>
     </footer>
-
 </body>
 </html>
